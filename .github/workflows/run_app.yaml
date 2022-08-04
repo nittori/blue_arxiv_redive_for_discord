@@ -1,8 +1,8 @@
 name: run_app_yaml
 
 on:
-  #push:
-    #branches: [main]
+  push:
+    branches: [main]
   schedule:
     # github actions のデフォルトの time zone が UTC なので、日本時間 - 9時間 した値を書く
     - cron:  '2 2 * * *'
