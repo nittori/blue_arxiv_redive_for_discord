@@ -23,7 +23,7 @@ async def on_ready():
     papers = get_paper.get_paper()
     
     if len(papers) == 0:
-        return 0
+        print("Today has no paper ...")
     else:
         for paper in papers:
             message = f"author : {paper['author']}\n"+\
