@@ -28,7 +28,7 @@ jobs:
         run: 
             python app.py
         env:
-            SLACK_APP_TOKEN: ${{secrets.ACCESS_TOKEN}}
+            ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
             channel_id: ${{secrets.CHANNEL_ID}}
             DATABASE_URL: ${{secrets.DATABASE_URL}}
 

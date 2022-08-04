@@ -10,7 +10,7 @@ TOKEN = os.environ.get("ACCESS_TOKEN")
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID")) # 任意のチャンネルID(int)
+CHANNEL_ID = int(os.environ.get("channel_id")) # 任意のチャンネルID(int)
 
 # 任意のチャンネルで挨拶する非同期関数を定義
 async def post_message(message):
